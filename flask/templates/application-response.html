@@ -1,11 +1,9 @@
-<!doctype html>
-<html>
-<head>
-    <title>Application Response</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Application Response{% endblock %}
 
 <!-- fill this in -->
 
-</body>
-</html>
+{% block body %}
+<p>Thank you, {{ firstname }} {{ lastname }}, for applying to be a {{ position }}. Your
+minimum salary requirement is ${{ salary }} dollars.</p>
+{% endblock %}

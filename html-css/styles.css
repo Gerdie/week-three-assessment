@@ -1,7 +1,9 @@
-/* Your CSS goes here */
+/* Your styles can go here. */
 
 input, select {
     background-color: #f2f75d;
+    margin: 5px;
+    width:175px;
 }
 
 [name="lastname"] {
@@ -9,5 +11,26 @@ input, select {
 }
 
 #instructions {
-    border: 1px dashed green;
+    border: 4px double green;
+    margin-bottom: 15px;
+    padding:8px;
+}
+
+input[value="Apply"] {
+    width: 75px;
+    display: block;
+    margin: 10px auto;
+}
+
+table {
+    width: 400px;
+    margin: auto;
+}
+
+label {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
 }

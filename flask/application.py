@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from flask_debugtoolbar import DebugToolbarExtension
-from os import chdir
 
 
 app = Flask(__name__)
@@ -14,19 +13,17 @@ app.secret_key = "ABC"
 def index_page():
     """Show an index page."""
 
-    return "<html><body>This is the homepage.</body></html>"
+    # return "<html><body>This is the homepage.</body></html>"
 
     # Alternately, we could make this a Jinja template in `templates/`
     # and return that result of rendering this, like:
     #
-    # return render_template("index.html")
+    return render_template("index.html")
 
 
 @app.route("/application-form")
 def render_form():
     """ Display the job application form"""
-
-    # chdir("..")  # using the html file in the above folder & playing with os mod
 
     return render_template("application-form.html")
 

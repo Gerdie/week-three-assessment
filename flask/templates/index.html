@@ -1,11 +1,18 @@
-<!doctype html>
-<html>
-<head>
-    <title>Sample Home Page</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
 
-<h1>This is the sample home page.</h1>
+<!-- fill this in -->
 
-</body>
-</html>
+{% block body %}
+
+<div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+        <div class="jumbotron">
+          <h1>Ubermelon</h1>
+          <p>Proudly ubering your melons since 1996.</p>
+          <p><a class="btn btn-primary btn-lg" href="/application-form" role="button">Join Us</a></p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
